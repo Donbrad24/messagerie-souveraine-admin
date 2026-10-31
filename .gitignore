@@ -1,2 +1,4 @@
 synapse-data/
 pgdata/
+.env
+portail/ministeres.json

@@ -1,0 +1,5 @@
+{
+  "sante":     {"nom": "Ministère de la Santé",    "espace": "!IDENTIFIANT_DE_L_ESPACE_SANTE"},
+  "education": {"nom": "Ministère de l'Éducation", "espace": "!IDENTIFIANT_DE_L_ESPACE_EDUCATION"},
+  "finances":  {"nom": "Ministère de l'économie",   "espace": "!IDENTIFIANT_DE_L_ESPACE_FINANCES"}
+}

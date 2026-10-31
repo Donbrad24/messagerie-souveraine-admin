@@ -27,3 +27,17 @@ services:
       - ./element-config.json:/app/config.json:ro
     ports:
       - "8080:80"
+
+  portail:
+    build: ./portail
+    restart: unless-stopped
+    depends_on:
+      - synapse
+    env_file: .env
+    environment:
+      SYNAPSE_URL: http://synapse:8008
+      SERVER_NAME: localhost
+    volumes:
+      - ./portail/ministeres.json:/app/ministeres.json:ro
+    ports:
+      - "127.0.0.1:5000:5000"
